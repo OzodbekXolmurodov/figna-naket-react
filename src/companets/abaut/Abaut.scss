@@ -1,0 +1,48 @@
+.abaut {
+  margin-bottom: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__h2 {
+    font-size: 48.83px;
+    line-height: 57.6px;
+    color: #150c01;
+    padding-bottom: 42px;
+  }
+  &__p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #150c01;
+    width: 508px;
+    padding-bottom: 50px;
+  }
+  &__div-btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__btn {
+    width: 158px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc780b;
+    color: #fff;
+    padding: 20px 40px;
+    &:hover {
+      color: #dc780b;
+      background-color: #fff;
+    }
+  }
+  &__btn-2 {
+    width: 158px;
+    border: 1.5px solid #dc780b;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #dc780b;
+    padding: 20px 40px;
+    &:hover {
+      color: #dc780b;
+      background-color: #fff;
+    }
+  }
+}
