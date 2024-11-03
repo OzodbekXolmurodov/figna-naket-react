@@ -1,0 +1,16 @@
+import { useEffect, useState } from "react";
+import axios from "../api";
+
+export const useFetch = (path) => {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get(path)
+      .then((res) => setData(res.data))
+      .catch((err) => setError(err));
+  }, []);
+
+  return { data, error };
+};
